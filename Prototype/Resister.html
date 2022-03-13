@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 가입</title>
+  <link rel="stylesheet" href="./css/register_form.css">
+</head>
+<body>
+  <form id="signup">
+    <fieldset>
+      <div style="text-align: center;"><img src="./img/register_profile.png" alr="프로필 등록"></div>
+      <!-- 주의! <center><img src="./img/register_profile.png" alr="프로필 등록"></center>  center태그는 HTML5에서 지원X 주의-->
+      <ul>
+        <!-- 이름 입력 -->
+        <li>
+          <label for="fullname"><span style="color:red">*</span>이름</label><br>
+          <input id="fullname" name="fullname" type="text" style="border: none; background: transparent;" placeholder="이름 입력" required>
+          <hr>
+        </li>
+
+        <!-- ID 입력 -->
+        <li>
+          <label for="userid"><span style="color:red">*</span>ID</label><br>
+          <input id="userid" name="userid" type="text" style="border: none; background: transparent;" placeholder="ID 입력" required>
+          <hr style="width:50%;"> <button type="submit"> 중복확인 </button>
+          
+        </li>
+        
+        <!-- PW 입력 -->
+        <!-- 실수 포인트 css 지정한 너비를 변경하지 않아서 발생한 문제 -->
+        <li>
+          <label for="pwd1"><span style="color:red">*</span>Password <span style="font-size:0.1em">(8~16자리 숫자, 특수문자 사용)</span></label><br> 
+          <input id="pwd1" name="pwd1" type="text" style="border: none; background: transparent;" placeholder="비밀번호 입력" required>
+          <hr>
+        </li>
+
+        <!-- PW 재입력 -->
+        <li>
+          <label for="pwd1"><span style="color:red">*</span>Password confirm</label><br>
+          <input id="pwd1" name="pwd1" type="text" style="border: none; background: transparent;" placeholder="비밀번호 재입력" required>
+          <hr>
+        </li>
+
+        <!-- E-mail 입력 -->
+        <li>
+          <label for="email"><span style="color:red">*</span>e-mail 인증</label><br>
+          <input id="email" name="email" type="text" style="border: none; background: transparent;" placeholder="e-mail 입력" required>
+          <hr style="width:50%;"> <button type="submit"> 인증번호 전송 </button>
+
+        </li>
+
+        <!-- 인증번호 입력 -->
+        <li>
+          <label for="email"><span style="color:red">*</span>e-mail 인증</label><br>
+          <input id="email" name="email" type="text" style="border: none; background: transparent;" placeholder="e-mail 입력" required>
+          <hr style="width:50%;"> 
+           
+
+          <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <td class="tg-0lax"><button type="submit"> 확인 </button></td>
+                <td class="tg-0lax"><button type="submit"> 재전송 </button></td>
+              </tr>
+            </thead>
+            </table>
+        </li>
+
+    </fieldset>
+  </form>
+</body>
+</html>
